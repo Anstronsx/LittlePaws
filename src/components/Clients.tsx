@@ -36,7 +36,7 @@ const clients = [
 
 export function Clients() {
   return (
-    <section id="clients" className="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+    <section id="clients" className="py-20 bg-pink-50 dark:bg-purple-900 transition-colors duration-300">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -44,8 +44,8 @@ export function Clients() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="text-gray-500 dark:text-gray-400">Clients</span>
-          <h2 className="text-4xl font-bold text-navy dark:text-white mt-2">Top Friends</h2>
+          <span className="text-pink-500 dark:text-pink-400 text-lg font-semibold">Clients</span>
+          <h2 className="text-4xl font-bold text-purple-700 dark:text-purple-300 mt-2">Top Friends</h2>
         </motion.div>
 
         <Swiper
@@ -67,7 +67,7 @@ export function Clients() {
                 whileTap={{ scale: 0.95 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg p-4 cursor-pointer"
+                className="bg-white dark:bg-purple-800 rounded-xl overflow-hidden shadow-lg p-4 cursor-pointer border-4 border-pink-200 dark:border-pink-600"
               >
                 <div className="relative h-48 mb-4">
                   <img
@@ -76,7 +76,7 @@ export function Clients() {
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-center dark:text-white">{client.name}</h3>
+                <h3 className="text-xl font-semibold text-center text-purple-700 dark:text-purple-300">{client.name}</h3>
               </motion.div>
             </SwiperSlide>
           ))}
